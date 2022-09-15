@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
+#name img {
+  height: 100px;
+  margin: -15px 50px;
+  animation: slide 3s linear alternate infinite;
+}
+@keyframes slide {
+  0% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 80px;
+  }
+}
+.list ul {
+  list-style: none;
+  display: flex;
+}
+.list ul li {
+  line-height: 65px;
+  padding: 0px 20px;
+  font-size: 23px;
+  font-weight: bold;
+}
+.list ul li a {
+  text-decoration: none;
+  color: rgba(156, 38, 22, 0.932);
+  text-shadow: 3px 3px 8px rgb(255, 195, 162);
+}
+.list {
+  margin: 0px 50px;
+}
+#main {
+  background-image: url("image/back.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.list ul li a:hover {
+  box-shadow: 2px 2px 4px 2px rgba(121, 19, 19, 0.694);
+}
+#center {
+  display: flex;
+  justify-content: space-around;
+}
+#left {
+  margin-top: 150px;
+}
+#left h1,
+h2 {
+  font-size: 50px;
+}
+#left h1 {
+  color: red;
+}
+#left h2 {
+  margin-top: -58px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  animation: h2 2s linear alternate infinite;
+}
+@keyframes h2 {
+  0% {
+    margin-left: 150px;
+  }
+  100% {
+    margin-left: 170px;
+  }
+}
+#left p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#right img {
+  height: 400px;
+  width: 400px;
+  border-top-left-radius: 100px;
+  box-shadow: -4px -4px 5px 4px rgb(14, 133, 18);
+  border-bottom-right-radius: 100px;
+}
+#left #btn {
+  width: 100px;
+  height: 25px;
+  margin-top: 50px;
+  margin-left: 100px;
+  box-shadow: 2px 2px 5px 4px rgb(31, 136, 38);
+  background-image: linear-gradient(green, rgb(25, 92, 25));
+  color: rgb(153, 34, 34);
+  border-color: darkgreen;
+}
+@media (max-width: 900px) {
+  #right img {
+    height: 180px;
+    width: 145px;
+    margin-top: 80px;
+    margin-right: 23px;
+    border-top-left-radius: 50px;
+    box-shadow: -4px -4px 5px 4px rgb(14, 133, 18);
+    border-bottom-right-radius: 50px;
+  }
+  #left h1,
+  h2 {
+    font-size: 20px;
+  }
+  #left h1 {
+    color: red;
+    position: relative;
+    top: -35px;
+    width: 45px;
+  }
+  #name img {
+    height: 50px;
+    margin-top: 10px;
+    animation: slide 3s linear alternate infinite;
+  }
+  @keyframes slide {
+    0% {
+      margin-left: 20px;
+    }
+    100% {
+      margin-left: 50px;
+    }
+  }
+  #center {
+    display: flex;
+    justify-content: space-between;
+  }
+  #left h2 {
+    animation: h2 2s linear alternate infinite;
+  }
+  @keyframes h2 {
+    0% {
+      margin-left: 60px;
+    }
+    100% {
+      margin-left: 70px;
+    }
+  }
+  #left p {
+    font-size: 10px;
+    font-weight: bolder;
+  }
+  #left #btn {
+    width: 100px;
+    height: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    box-shadow: 2px 2px 5px 4px rgb(31, 136, 38);
+    background-image: linear-gradient(green, rgb(25, 92, 25));
+    color: rgb(153, 34, 34);
+    border-color: darkgreen;
+  }
+  #left {
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+
+  .list ul {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+  }
+  .list ul li {
+    line-height: 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  @media (max-width: 300px) {
+    #left {
+      position: absolute;
+      top: 300px;
+      left: 30px;
+    }
+    #right {
+      margin-left: 50px;
+    }
+    .list ul {
+      display: flex;
+      position: absolute;
+      bottom: 30px;
+      left: 0px;
+    }
+    .list ul li {
+      line-height: 20px;
+      padding: 0px 10px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
